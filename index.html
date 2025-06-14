@@ -19,11 +19,11 @@
 
         .carousel-container {
             width: 100%;
-            height: 120px;
+            height: 140px;
             overflow: hidden;
             position: relative;
-            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-            border: 1px solid #e2e8f0;
+            background: #F8F8F7;
+            border: 1px solid rgba(208, 206, 203, 0.4);
             border-radius: 12px;
         }
 
@@ -32,21 +32,21 @@
             align-items: center;
             height: 100%;
             animation: scroll 30s linear infinite;
-            width: calc(200px * 12); /* Adjust based on number of logos */
+            width: calc(220px * 38); /* Adjust based on number of logos */
         }
 
         .logo-item {
             flex-shrink: 0;
-            width: 160px;
-            height: 80px;
+            width: 180px;
+            height: 100px;
             margin: 0 20px;
             display: flex;
             align-items: center;
             justify-content: center;
-            background: white;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
+            overflow: hidden;
         }
 
         .logo-item:hover {
@@ -55,11 +55,12 @@
         }
 
         .logo-item img {
-            max-width: 120px;
-            max-height: 60px;
-            object-fit: contain;
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
             filter: grayscale(0.3);
             transition: filter 0.3s ease;
+            border-radius: 8px;
         }
 
         .logo-item:hover img {
@@ -110,8 +111,12 @@
             }
             
             .logo-item img {
-                max-width: 100px;
-                max-height: 50px;
+                max-width: 120px;
+                max-height: 60px;
+                width: auto;
+                height: auto;
+                object-fit: contain;
+                border-radius: 6px;
             }
             
             .logo-placeholder {
@@ -127,42 +132,120 @@
         <div class="carousel-track">
             <!-- First set of logos -->
             <div class="logo-item">
-                <div class="logo-placeholder tech">TechCorp</div>
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMZLyZqVv2jEp4hBLsmxRAY0u168veGMtQC7l9" alt="Logo 1">
             </div>
             <div class="logo-item">
-                <div class="logo-placeholder design">DesignStudio</div>
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMnw6Ebqlmw9Dz7bNdR0OSuMHVapTIZQAcmlsF" alt="Logo 2">
             </div>
             <div class="logo-item">
-                <div class="logo-placeholder business">BizSolutions</div>
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMh87ifEtxRIcNSsty26JLieZH9GFmu3EzawYq" alt="Logo 3">
             </div>
             <div class="logo-item">
-                <div class="logo-placeholder finance">FinanceApp</div>
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMEzTkPUWGyOagxsoviA6X3zL9hrf02BZMtdWq" alt="Logo 4">
             </div>
             <div class="logo-item">
-                <div class="logo-placeholder media">MediaGroup</div>
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM0bAqDJpNISDgJHkLm6BAlFqZvdnrwEy4Mjz1" alt="Logo 5">
             </div>
             <div class="logo-item">
-                <div class="logo-placeholder ecommerce">ShopEasy</div>
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMGTTdr9KRHr9sCF8Uu4x5aWb37eRMctXdBpwq" alt="Logo 6">
+            </div>
+            <div class="logo-item">
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMdayxlqWhSN48q7lTI3cswfWQCH6YMzOaBX19" alt="Logo 7">
+            </div>
+            <div class="logo-item">
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMZlmDOgv2jEp4hBLsmxRAY0u168veGMtQC7l9" alt="Logo 8">
+            </div>
+            <div class="logo-item">
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM6tGOVU1caB2VoeRLdKynvi4CPfSXwrEJmp1U" alt="Logo 9">
+            </div>
+            <div class="logo-item">
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMsnxIswo7l9Sgpm86FIMXbf0RqKHhLOuGxtkw" alt="Logo 10">
+            </div>
+            <div class="logo-item">
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMr6lybVa7yPIdD3Xzc4ienCJxTl0Qagkum5GV" alt="Logo 11">
+            </div>
+            <div class="logo-item">
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM9fgv0n7Ju1LZtDSngbU03zpCOfrK5EVicNFX" alt="Logo 12">
+            </div>
+            <div class="logo-item">
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMzWE0Q4TCEiDhBqZY6t4OygfvcNVIHdskAu8p" alt="Logo 13">
+            </div>
+            <div class="logo-item">
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMYFRYvygUFN4oMSO3P0DRB9ctTkug5qLGCUKE" alt="Logo 14">
+            </div>
+            <div class="logo-item">
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM6J5wdg1caB2VoeRLdKynvi4CPfSXwrEJmp1U" alt="Logo 15">
+            </div>
+            <div class="logo-item">
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM6xXwX61caB2VoeRLdKynvi4CPfSXwrEJmp1U" alt="Logo 16">
+            </div>
+            <div class="logo-item">
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMF8OY9NIQG1MqYN8SlVpyDzvFdr6iaJKo2BPe" alt="Logo 17">
+            </div>
+            <div class="logo-item">
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMD85DaqJ5qVxhWz4n9sbr0UitdavSBQjfwJCk" alt="Logo 18">
+            </div>
+            <div class="logo-item">
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM3xjgTWduLBZnsmxNcpdUYQy2vuTAWXgFwVa0" alt="Logo 19">
             </div>
             
             <!-- Duplicate set for seamless loop -->
             <div class="logo-item">
-                <div class="logo-placeholder tech">TechCorp</div>
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMZLyZqVv2jEp4hBLsmxRAY0u168veGMtQC7l9" alt="Logo 1">
             </div>
             <div class="logo-item">
-                <div class="logo-placeholder design">DesignStudio</div>
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMnw6Ebqlmw9Dz7bNdR0OSuMHVapTIZQAcmlsF" alt="Logo 2">
             </div>
             <div class="logo-item">
-                <div class="logo-placeholder business">BizSolutions</div>
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMh87ifEtxRIcNSsty26JLieZH9GFmu3EzawYq" alt="Logo 3">
             </div>
             <div class="logo-item">
-                <div class="logo-placeholder finance">FinanceApp</div>
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMEzTkPUWGyOagxsoviA6X3zL9hrf02BZMtdWq" alt="Logo 4">
             </div>
             <div class="logo-item">
-                <div class="logo-placeholder media">MediaGroup</div>
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM0bAqDJpNISDgJHkLm6BAlFqZvdnrwEy4Mjz1" alt="Logo 5">
             </div>
             <div class="logo-item">
-                <div class="logo-placeholder ecommerce">ShopEasy</div>
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMGTTdr9KRHr9sCF8Uu4x5aWb37eRMctXdBpwq" alt="Logo 6">
+            </div>
+            <div class="logo-item">
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMdayxlqWhSN48q7lTI3cswfWQCH6YMzOaBX19" alt="Logo 7">
+            </div>
+            <div class="logo-item">
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMZlmDOgv2jEp4hBLsmxRAY0u168veGMtQC7l9" alt="Logo 8">
+            </div>
+            <div class="logo-item">
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM6tGOVU1caB2VoeRLdKynvi4CPfSXwrEJmp1U" alt="Logo 9">
+            </div>
+            <div class="logo-item">
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMsnxIswo7l9Sgpm86FIMXbf0RqKHhLOuGxtkw" alt="Logo 10">
+            </div>
+            <div class="logo-item">
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMr6lybVa7yPIdD3Xzc4ienCJxTl0Qagkum5GV" alt="Logo 11">
+            </div>
+            <div class="logo-item">
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM9fgv0n7Ju1LZtDSngbU03zpCOfrK5EVicNFX" alt="Logo 12">
+            </div>
+            <div class="logo-item">
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMzWE0Q4TCEiDhBqZY6t4OygfvcNVIHdskAu8p" alt="Logo 13">
+            </div>
+            <div class="logo-item">
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMYFRYvygUFN4oMSO3P0DRB9ctTkug5qLGCUKE" alt="Logo 14">
+            </div>
+            <div class="logo-item">
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM6J5wdg1caB2VoeRLdKynvi4CPfSXwrEJmp1U" alt="Logo 15">
+            </div>
+            <div class="logo-item">
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM6xXwX61caB2VoeRLdKynvi4CPfSXwrEJmp1U" alt="Logo 16">
+            </div>
+            <div class="logo-item">
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMF8OY9NIQG1MqYN8SlVpyDzvFdr6iaJKo2BPe" alt="Logo 17">
+            </div>
+            <div class="logo-item">
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMD85DaqJ5qVxhWz4n9sbr0UitdavSBQjfwJCk" alt="Logo 18">
+            </div>
+            <div class="logo-item">
+                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM3xjgTWduLBZnsmxNcpdUYQy2vuTAWXgFwVa0" alt="Logo 19">
             </div>
         </div>
     </div>
