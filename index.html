@@ -12,9 +12,11 @@
         }
 
         body {
-            background: #ffffff;
+            background: transparent;
             overflow: hidden;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
         .carousel-container {
@@ -25,6 +27,10 @@
             background: #F8F8F7;
             border: 1px solid rgba(208, 206, 203, 0.4);
             border-radius: 12px;
+        }
+
+        .carousel-container:hover .carousel-track {
+            animation-play-state: paused;
         }
 
         .carousel-track {
@@ -58,13 +64,13 @@
             width: 100%;
             height: 100%;
             object-fit: fill;
-            filter: grayscale(0.3);
-            transition: filter 0.3s ease;
+            transition: transform 0.3s ease;
             border-radius: 8px;
+            display: block;
         }
 
         .logo-item:hover img {
-            filter: grayscale(0);
+            transform: scale(1.1);
         }
 
         /* Placeholder logo styles */
