@@ -46,32 +46,21 @@
             width: 180px;
             height: 100px;
             margin: 0 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
             overflow: hidden;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         .logo-item:hover {
-            transform: translateY(-2px);
+            transform: translateY(-2px) scale(1.05);
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
         }
 
-        .logo-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: fill;
-            transition: transform 0.3s ease;
-            border-radius: 8px;
-            display: block;
-        }
-
-        .logo-item:hover img {
-            transform: scale(1.1);
-        }
+        /* Remove img styles since we're using background images */
 
         /* Placeholder logo styles */
         .logo-placeholder {
@@ -137,122 +126,46 @@
     <div class="carousel-container">
         <div class="carousel-track">
             <!-- First set of logos -->
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMZLyZqVv2jEp4hBLsmxRAY0u168veGMtQC7l9" alt="Logo 1">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMnw6Ebqlmw9Dz7bNdR0OSuMHVapTIZQAcmlsF" alt="Logo 2">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMh87ifEtxRIcNSsty26JLieZH9GFmu3EzawYq" alt="Logo 3">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMEzTkPUWGyOagxsoviA6X3zL9hrf02BZMtdWq" alt="Logo 4">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM0bAqDJpNISDgJHkLm6BAlFqZvdnrwEy4Mjz1" alt="Logo 5">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMGTTdr9KRHr9sCF8Uu4x5aWb37eRMctXdBpwq" alt="Logo 6">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMdayxlqWhSN48q7lTI3cswfWQCH6YMzOaBX19" alt="Logo 7">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMZlmDOgv2jEp4hBLsmxRAY0u168veGMtQC7l9" alt="Logo 8">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM6tGOVU1caB2VoeRLdKynvi4CPfSXwrEJmp1U" alt="Logo 9">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMsnxIswo7l9Sgpm86FIMXbf0RqKHhLOuGxtkw" alt="Logo 10">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMr6lybVa7yPIdD3Xzc4ienCJxTl0Qagkum5GV" alt="Logo 11">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM9fgv0n7Ju1LZtDSngbU03zpCOfrK5EVicNFX" alt="Logo 12">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMzWE0Q4TCEiDhBqZY6t4OygfvcNVIHdskAu8p" alt="Logo 13">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMYFRYvygUFN4oMSO3P0DRB9ctTkug5qLGCUKE" alt="Logo 14">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM6J5wdg1caB2VoeRLdKynvi4CPfSXwrEJmp1U" alt="Logo 15">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM6xXwX61caB2VoeRLdKynvi4CPfSXwrEJmp1U" alt="Logo 16">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMF8OY9NIQG1MqYN8SlVpyDzvFdr6iaJKo2BPe" alt="Logo 17">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMD85DaqJ5qVxhWz4n9sbr0UitdavSBQjfwJCk" alt="Logo 18">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM3xjgTWduLBZnsmxNcpdUYQy2vuTAWXgFwVa0" alt="Logo 19">
-            </div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMZLyZqVv2jEp4hBLsmxRAY0u168veGMtQC7l9');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMnw6Ebqlmw9Dz7bNdR0OSuMHVapTIZQAcmlsF');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMh87ifEtxRIcNSsty26JLieZH9GFmu3EzawYq');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMEzTkPUWGyOagxsoviA6X3zL9hrf02BZMtdWq');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM0bAqDJpNISDgJHkLm6BAlFqZvdnrwEy4Mjz1');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMGTTdr9KRHr9sCF8Uu4x5aWb37eRMctXdBpwq');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMdayxlqWhSN48q7lTI3cswfWQCH6YMzOaBX19');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMZlmDOgv2jEp4hBLsmxRAY0u168veGMtQC7l9');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM6tGOVU1caB2VoeRLdKynvi4CPfSXwrEJmp1U');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMsnxIswo7l9Sgpm86FIMXbf0RqKHhLOuGxtkw');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMr6lybVa7yPIdD3Xzc4ienCJxTl0Qagkum5GV');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM9fgv0n7Ju1LZtDSngbU03zpCOfrK5EVicNFX');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMzWE0Q4TCEiDhBqZY6t4OygfvcNVIHdskAu8p');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMYFRYvygUFN4oMSO3P0DRB9ctTkug5qLGCUKE');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM6J5wdg1caB2VoeRLdKynvi4CPfSXwrEJmp1U');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM6xXwX61caB2VoeRLdKynvi4CPfSXwrEJmp1U');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMF8OY9NIQG1MqYN8SlVpyDzvFdr6iaJKo2BPe');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMD85DaqJ5qVxhWz4n9sbr0UitdavSBQjfwJCk');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM3xjgTWduLBZnsmxNcpdUYQy2vuTAWXgFwVa0');"></div>
             
             <!-- Duplicate set for seamless loop -->
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMZLyZqVv2jEp4hBLsmxRAY0u168veGMtQC7l9" alt="Logo 1">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMnw6Ebqlmw9Dz7bNdR0OSuMHVapTIZQAcmlsF" alt="Logo 2">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMh87ifEtxRIcNSsty26JLieZH9GFmu3EzawYq" alt="Logo 3">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMEzTkPUWGyOagxsoviA6X3zL9hrf02BZMtdWq" alt="Logo 4">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM0bAqDJpNISDgJHkLm6BAlFqZvdnrwEy4Mjz1" alt="Logo 5">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMGTTdr9KRHr9sCF8Uu4x5aWb37eRMctXdBpwq" alt="Logo 6">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMdayxlqWhSN48q7lTI3cswfWQCH6YMzOaBX19" alt="Logo 7">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMZlmDOgv2jEp4hBLsmxRAY0u168veGMtQC7l9" alt="Logo 8">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM6tGOVU1caB2VoeRLdKynvi4CPfSXwrEJmp1U" alt="Logo 9">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMsnxIswo7l9Sgpm86FIMXbf0RqKHhLOuGxtkw" alt="Logo 10">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMr6lybVa7yPIdD3Xzc4ienCJxTl0Qagkum5GV" alt="Logo 11">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM9fgv0n7Ju1LZtDSngbU03zpCOfrK5EVicNFX" alt="Logo 12">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMzWE0Q4TCEiDhBqZY6t4OygfvcNVIHdskAu8p" alt="Logo 13">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMYFRYvygUFN4oMSO3P0DRB9ctTkug5qLGCUKE" alt="Logo 14">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM6J5wdg1caB2VoeRLdKynvi4CPfSXwrEJmp1U" alt="Logo 15">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM6xXwX61caB2VoeRLdKynvi4CPfSXwrEJmp1U" alt="Logo 16">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMF8OY9NIQG1MqYN8SlVpyDzvFdr6iaJKo2BPe" alt="Logo 17">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMD85DaqJ5qVxhWz4n9sbr0UitdavSBQjfwJCk" alt="Logo 18">
-            </div>
-            <div class="logo-item">
-                <img src="https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM3xjgTWduLBZnsmxNcpdUYQy2vuTAWXgFwVa0" alt="Logo 19">
-            </div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMZLyZqVv2jEp4hBLsmxRAY0u168veGMtQC7l9');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMnw6Ebqlmw9Dz7bNdR0OSuMHVapTIZQAcmlsF');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMh87ifEtxRIcNSsty26JLieZH9GFmu3EzawYq');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMEzTkPUWGyOagxsoviA6X3zL9hrf02BZMtdWq');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM0bAqDJpNISDgJHkLm6BAlFqZvdnrwEy4Mjz1');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMGTTdr9KRHr9sCF8Uu4x5aWb37eRMctXdBpwq');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMdayxlqWhSN48q7lTI3cswfWQCH6YMzOaBX19');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMZlmDOgv2jEp4hBLsmxRAY0u168veGMtQC7l9');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM6tGOVU1caB2VoeRLdKynvi4CPfSXwrEJmp1U');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMsnxIswo7l9Sgpm86FIMXbf0RqKHhLOuGxtkw');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMr6lybVa7yPIdD3Xzc4ienCJxTl0Qagkum5GV');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM9fgv0n7Ju1LZtDSngbU03zpCOfrK5EVicNFX');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMzWE0Q4TCEiDhBqZY6t4OygfvcNVIHdskAu8p');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMYFRYvygUFN4oMSO3P0DRB9ctTkug5qLGCUKE');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM6J5wdg1caB2VoeRLdKynvi4CPfSXwrEJmp1U');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM6xXwX61caB2VoeRLdKynvi4CPfSXwrEJmp1U');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMF8OY9NIQG1MqYN8SlVpyDzvFdr6iaJKo2BPe');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oMD85DaqJ5qVxhWz4n9sbr0UitdavSBQjfwJCk');"></div>
+            <div class="logo-item" style="background-image: url('https://t16wvp0l8d.ufs.sh/f/YlsIMiUFN4oM3xjgTWduLBZnsmxNcpdUYQy2vuTAWXgFwVa0');"></div>
         </div>
     </div>
 </body>
